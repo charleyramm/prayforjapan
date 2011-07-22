@@ -2,14 +2,17 @@
 	/**
 	 * @file Controller code for single.php, view a single image
 	 */
-
-	include './model/db.inc';				// Include the model, database functions and stuff like that
-	include './model/image.inc';			// Include the model for the 'image' table in the database. insert(), update() etc. 
+        
+        // Include the model, database functions and stuff like that
+	include './model/db.inc';		
+        
+        // Include the model for the 'image' table in the database. insert(), update() etc.
+	include './model/image.inc';		 
 	include './libs/krumo/class.krumo.php';
 
 	// Global variables 
-	$message = '';							// Messages to display to the user
-	$image = array();						// Pass information about the image to the view
+	$message = '';				// Messages to display to the user
+	$image = array();			// Pass information about the image to the view
 	
 	
 	/**
